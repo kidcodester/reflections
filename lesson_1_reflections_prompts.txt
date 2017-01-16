@@ -1,0 +1,54 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    A line-by-line comparison was helpful in pinpointing the differences between the
+old and the new file.  It helped to zero in on the difference (and potential bug) very
+quickly - much quicker than would otherwise have been possible using the naked eye.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    With easy access to the entire history of a file, you could conceivably run/execute
+older versions to compare the results with current working versions, helping pinpoint differences
+besides documenting feature changes/improvements.  Additionally, older features rendered
+obsolete in newer versions could be brought back, if desired.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+	You need to exercise your own judgement in determining the commit frequency.
+Best to keep it to one logical change at a time.  Not a fix for 3 bugs in separate
+functions or a commit for a project not saved in over a week at all.  Nor should it be
+to fix 3 typos in your README every time.   
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git was designed for coding projects and programmers.  For such applications, it's
+quite possible that changes in one file will have/cause concurrent changes in other files.
+Other versioning systems such as Google Docs were not built for this purpose and therefore
+lack this functionality.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    First use git log to get a history of commits.  These will be listed with a git commit
+serial number.  To look at the difference between two files, simply type:
+git diff <serial1> <serial2>
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    You needn't worry about overwriting older files as they're always there and can be
+used with the simple command:
+	git checkout <serialnumber>
+When done and you want to revert back to the most recent, do the same:
+	git checkout <serialnumberMostRecent>
+
+You can also branch off an earlier version if you want a parallel project with edits
+done on the earlier version.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I'll continue to use git as before to control my code versions.
+    I don't think I need particular formatting-style set-ups but can follow the instructor's notes for these, if need be.
