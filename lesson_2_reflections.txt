@@ -4,3 +4,9 @@ What happens when you initialize a repository? Why do you need to do it?
 If you enter git status, it shows you the 'untracked' status of the files
 (considered 'new' when git repo initialized for the first time).
 To do this, simply enter: 'git init' in a given repository.
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	It prepares a commit so it takes new/modified files from the working directory
+and gets them ready for a commit to the master.
