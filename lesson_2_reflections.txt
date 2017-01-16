@@ -10,3 +10,31 @@ How is the staging area different from the working directory and the repository?
 
 	It prepares a commit so it takes new/modified files from the working directory
 and gets them ready for a commit to the master.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	You can track changes you make to files in working directory and those in staging area
+and give a message per each logical change.
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	When you want to try some new features but not necessarily  make this behavior be that of the master branch.
+
+How do the diagrams help you visualize the branch structure?
+
+	It's much easier to imagine reachability and parent-child relationships between nodes(commits) of code versions
+this way.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	It puts together commong parts of both files with reference to a master file of each (the ancestor commit
+common to both).  Thus if file1 takes out part A that was in master and file2 leaves it, the merge will remove 'A'
+since this was an active decision in file1 and vice versa.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Git's automerging feature can really take into account line-by-line changes but conflicts between files 
+needs human attention to render what should be going into a merged file rather than stuff which might not otherwise
+make sense.
