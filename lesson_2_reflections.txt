@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	You get a system message confirming a git repository was created.
+If you enter git status, it shows you the 'untracked' status of the files
+(considered 'new' when git repo initialized for the first time).
+To do this, simply enter: 'git init' in a given repository.
