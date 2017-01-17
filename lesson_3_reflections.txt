@@ -25,3 +25,8 @@ How would you collaborate without using Git or GitHub? What would be easier, and
 
 	Avoiding code versioning systems altogether would likely require document tracking systems and/or making many backups of local
 files to be able to refer to later on.  Certainly, using Git makes the entire process much easier.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+	You might want to make changes in a separate branch when you're testing out a new feature which you don't feel is ready for inclusion in master yet and 
+for which you might solicit comments in a collaborative framework, as per pull requests on GitHub.
