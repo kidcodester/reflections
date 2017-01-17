@@ -14,3 +14,9 @@ and it tracks the number of forks made of a source user's repository.  Forks may
 work in the git flow process (with changes requiring commits to be pushed back to master forked (cloned) repository on GitHub).
 A branch is splintering of a given project (say from master) to try out/test new features which might not necessarily belong or need
 to belong in master.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	This way, you have a working copy of the latest remote master so that if you need to make changes to code locally and will not
+have access to remote for whatever reason, you have the best representation to work on in order to minimize version conflicts during commital/
+push steps later.
